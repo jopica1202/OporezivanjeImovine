@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace OporezivanjeImovine
 {
-    public partial class Form_Login : Form
+    public partial class Glavna : Form
     {
-        public Form_Login()
+        public Glavna()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+        private void Glavna_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

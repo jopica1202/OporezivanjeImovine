@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.lbl_login = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txt_name = new System.Windows.Forms.TextBox();
+            this.Txt_pass = new System.Windows.Forms.TextBox();
             this.lbl_mail = new System.Windows.Forms.Label();
             this.lbl_password = new System.Windows.Forms.Label();
             this.btn_Uloguj = new System.Windows.Forms.Button();
+            this.btn_registruj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl_login
@@ -48,19 +49,19 @@
             this.lbl_login.Text = "Login";
             this.lbl_login.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // Txt_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(465, 194);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(243, 22);
-            this.textBox1.TabIndex = 1;
+            this.Txt_name.Location = new System.Drawing.Point(465, 194);
+            this.Txt_name.Name = "Txt_name";
+            this.Txt_name.Size = new System.Drawing.Size(243, 22);
+            this.Txt_name.TabIndex = 1;
             // 
-            // textBox2
+            // Txt_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(465, 258);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 22);
-            this.textBox2.TabIndex = 1;
+            this.Txt_pass.Location = new System.Drawing.Point(465, 258);
+            this.Txt_pass.Name = "Txt_pass";
+            this.Txt_pass.Size = new System.Drawing.Size(243, 22);
+            this.Txt_pass.TabIndex = 1;
             // 
             // lbl_mail
             // 
@@ -96,6 +97,17 @@
             this.btn_Uloguj.TabIndex = 2;
             this.btn_Uloguj.Text = "Uloguj se";
             this.btn_Uloguj.UseVisualStyleBackColor = false;
+            this.btn_Uloguj.Click += new System.EventHandler(this.btn_Uloguj_Click);
+            // 
+            // btn_registruj
+            // 
+            this.btn_registruj.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_registruj.Location = new System.Drawing.Point(365, 412);
+            this.btn_registruj.Name = "btn_registruj";
+            this.btn_registruj.Size = new System.Drawing.Size(172, 40);
+            this.btn_registruj.TabIndex = 3;
+            this.btn_registruj.Text = "Registruj se";
+            this.btn_registruj.UseVisualStyleBackColor = true;
             // 
             // Form_Login
             // 
@@ -103,14 +115,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::OporezivanjeImovine.Properties.Resources.pozadina;
             this.ClientSize = new System.Drawing.Size(948, 596);
+            this.Controls.Add(this.btn_registruj);
             this.Controls.Add(this.btn_Uloguj);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txt_pass);
+            this.Controls.Add(this.Txt_name);
             this.Controls.Add(this.lbl_password);
             this.Controls.Add(this.lbl_mail);
             this.Controls.Add(this.lbl_login);
             this.Name = "Form_Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Form_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,11 +133,12 @@
         #endregion
 
         private System.Windows.Forms.Label lbl_login;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txt_name;
+        private System.Windows.Forms.TextBox Txt_pass;
         private System.Windows.Forms.Label lbl_mail;
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.Button btn_Uloguj;
+        private System.Windows.Forms.Button btn_registruj;
     }
 }
 
